@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Barlow", sans-serif;
+    background-image: -moz-linear-gradient(to bottom right, rgb(160, 157, 157), white);
+}
+
 h1 {
     font-family: 'Barlow', sans-serif;
     font-size: 65px;
@@ -14,21 +19,26 @@ h1 {
 }
 
 .brand {
-    font-size: 40px;
+    font-size: 45px;
     font-style: italic;
     color: green;
 }
 
-body {
-    font-family: "Barlow", sans-serif;
-    background-image: -moz-linear-gradient(to bottom right, rgb(160, 157, 157), white);
+.log {
+    font-size: 35px;
 }
+
+.elsewhere {
+    font-size: 35px;
+}
+
 
 section {
     padding: 100px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 footer {
     text-align: right;
+    padding: 8px;
 }
