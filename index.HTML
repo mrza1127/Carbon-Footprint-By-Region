@@ -12,15 +12,17 @@
 
 <body>
 
-    <header class="section">
-        <div class="container">
+    <header class="section hero is-link">
+        <div class="container hero-body">
           <h1 class="title">Carbon Footprint By Region</h1>
           <p class="subtitle">Welcome to the <strong>Carbon Footprint Tracker website</strong>!</p>      
         </div>
     </header>
    
     <section class="section">
-        <div class="field">
+      <div class="columns">
+        <div class="column is-2">
+          <div class="field">
             <label class="label">Select a State</label>
             <div class="control">
               <div class="select">
@@ -79,8 +81,8 @@
                 </select>
               </div>
             </div>
-        </div>
-        <div class="field">
+          </div>
+          <div class="field">
             <label class="label">Select an Activity</label>
             <div class="control">
               <div class="select">
@@ -94,8 +96,8 @@
                 </select>
               </div>
             </div>
-        </div>
-        <div class="field">
+          </div>
+          <div class="field">
             <label class="label">Select a Unit</label>
             <div class="control">
               <div class="select">
@@ -109,25 +111,26 @@
                 </select>
               </div>
             </div>
-        </div>
-        <div class="field">
+          </div>
+          <div class="field">
             <label class="label">Enter an Amount</label>
             <div class="control">
               <input class="input is-link" type="text" placeholder="Text input">
             </div>
-        </div>   
-        <div class="field is-grouped">
+          </div>   
+          <div class="field is-grouped">
             <div class="control">
               <button class="button is-success">Submit</button>
             </div>
             <div class="control">
               <button class="button is-danger is-light">Reset</button>
             </div>
+          </div>
         </div>
-        
-        <div>
+        <div class="column is-10">
+          <div>
             <div class="tile is-parent">
-                <article class="tile is-child notification is-danger">
+                <article class="tile is-child notification is-info">
                     <p class="title">Section 1</p>
                     <p class="subtitle">Important Data</p>
                     <div class="content">
@@ -145,7 +148,7 @@
                 </article>
             </div>
             <div class="tile is-parent">
-                <article class="tile is-child notification is-success">
+                <article class="tile is-child notification is-info">
                     <p class="title">Section 3</p>
                     <p class="subtitle">Important Data</p>
                     <div class="content">
@@ -153,13 +156,15 @@
                     </div>
                 </article>
             </div>
+          </div>
         </div>
+      </div>
     </section>
    
     <footer class="footer">
         <div class="content has-text-centered">
           <p>
-            <strong>Carbon Footprint By Region</strong> by <a href="">Group Project</a>. The source code is licensed
+            <strong>Carbon Footprint By Region</strong> by <a href="">Group Project - Team Claw</a>. This source code is licensed.
             <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
           </p>
         </div>
