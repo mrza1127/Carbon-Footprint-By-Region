@@ -9,6 +9,9 @@ var unit = '';
 var powerUsage = '';
 const request_url = 'https://www.carboninterface.com/api/v1/estimates';
 const api_token = 'Eiv9kGXI9G1VxlTKFIzCQ';
+const climatiq_url = 'https://beta3.api.climatiq.io/estimate';
+const climatiq_token = 'E7TAM9S8DR48YCJXKWRWNY09TPXM';
+
 
 resetForm();
 
@@ -19,7 +22,6 @@ function submitCarbonForm(event) {
     unit = carbonFootPrintForm.elements['unit'].value;
     powerUsage = carbonFootPrintForm.elements['powerUsage'].value;
     calculateCarbonFootPrint();
-    
 }
 
 function resetForm() {
