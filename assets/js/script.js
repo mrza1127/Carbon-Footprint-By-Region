@@ -1,11 +1,16 @@
 
-var carbonFootPrintForm = document.getElementById('carbonFootPrint');
+const carbonFootPrintForm = document.getElementById('carbonFootPrint');
+const reslutsScreen = document.getElementById('results');
+const yourEmissionProgerss = document.getElementById('yourEmissionProgress');
+const yourEmission = document.getElementById('yourEmission');
 var selectedState = '';
 var activities = '';
 var unit = '';
 var powerUsage = '';
 const request_url = 'https://www.carboninterface.com/api/v1/estimates';
 const api_token = 'Eiv9kGXI9G1VxlTKFIzCQ';
+
+resetForm();
 
 function submitCarbonForm(event) {
     event.preventDefault();
@@ -17,13 +22,18 @@ function submitCarbonForm(event) {
     
 }
 
+function resetForm() {
+    carbonFootPrintForm.reset();
+    reslutsScreen.style.display = 'none';
+}
+
 function calculateCarbonFootPrint() {
     var request_body = {
         "type": activities,
         "country": "us",
         "state": selectedState,
         "electricity_unit": unit,
-        "electricity_value": parseInt(powerUsage)   
+        "electricity_value": parseInt(powerUsage)
     }
 
     fetch(request_url, {
@@ -35,6 +45,12 @@ function calculateCarbonFootPrint() {
         body: JSON.stringify(request_body)
     })
         .then((res) => res.json())
-        .then(data => console.log(data));
+        .then(data => displayResults(data));
 
+}
+
+function displayResults(results) {
+    yourEmissionProgerss.value = results.data.attributes.carbon_mt; 
+    yourEmission.innerHTML = results.data.attributes.carbon_mt;
+    reslutsScreen.style.display = 'block';
 }
