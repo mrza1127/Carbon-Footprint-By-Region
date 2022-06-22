@@ -52,7 +52,7 @@ function calculateCarbonFootPrint() {
 }
 
 function displayResults(results) {
-    yourEmissionProgerss.value = results.data.attributes.carbon_mt; 
+    yourEmissionProgress.value = results.data.attributes.carbon_mt; 
     yourEmission.innerHTML = results.data.attributes.carbon_mt;
-    reslutsScreen.style.display = 'block';
+    resultsScreen.style.display = 'block';
 }
