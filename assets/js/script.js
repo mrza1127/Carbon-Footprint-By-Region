@@ -1,7 +1,7 @@
 
 const carbonFootPrintForm = document.getElementById('carbonFootPrint');
-const reslutsScreen = document.getElementById('results');
-const yourEmissionProgerss = document.getElementById('yourEmissionProgress');
+const resultsScreen = document.getElementById('results');
+const yourEmissionProgress = document.getElementById('yourEmissionProgress');
 const yourEmission = document.getElementById('yourEmission');
 var selectedState = '';
 var activities = '';
@@ -22,12 +22,12 @@ function submitCarbonForm(event) {
     unit = carbonFootPrintForm.elements['unit'].value;
     powerUsage = carbonFootPrintForm.elements['powerUsage'].value;
     calculateCarbonFootPrint();
-}
+};
 
 function resetForm() {
     carbonFootPrintForm.reset();
-    reslutsScreen.style.display = 'none';
-}
+    resultsScreen.style.display = 'none';
+};
 
 function calculateCarbonFootPrint() {
     var request_body = {
@@ -49,7 +49,7 @@ function calculateCarbonFootPrint() {
         .then((res) => res.json())
         .then(data => displayResults(data));
 
-}
+};
 
 function displayResults(results) {
     yourEmissionProgress.value = results.data.attributes.carbon_mt; 
