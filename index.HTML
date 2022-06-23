@@ -89,10 +89,10 @@
               <select name="activities">
                 <option>Choose an option</option>
                 <option value="electricity">Electricity</option>
-                <option value="flight">Flight</option>
-                <option value="shipping">Shipping</option>
-                <option value="vehicle">Vehicle</option>
-                <option value="fuel combustion">Fuel Combustion</option>
+                <!-- <option value="flight">Flight</option> -->
+                <!-- <option value="shipping">Shipping</option> -->
+                <!-- <option value="vehicle">Vehicle</option> -->
+                <!-- <option value="fuel combustion">Fuel Combustion</option> -->
               </select>
             </div>
           </div>
@@ -119,7 +119,7 @@
             <button onclick=submitCarbonForm(event) class="button is-success">Submit</button>
           </div>
           <div class="control">
-            <button class="button is-danger is-light" onclick=resetForm()>Reset</button>
+            <button onclick=resetForm() class="button is-danger is-light">Reset</button>
           </div>
         </div>
       </form>
@@ -131,7 +131,7 @@
                 <div>Your total annual emissions</div>
                 <div class="columns">
                   <div class="column is-4">
-                    <progress id="yourEmissionProgress" class="progress is-primary" value="" max="100"></progress>
+                    <progress id="yourEmissionProgress" class="progress is-large is-danger" value="" max="100"></progress>
                   </div>
                   <div class="column is-2" ><span id="yourEmission"> </span> t</div>
                 </div>
@@ -141,7 +141,7 @@
                 <!--These are hard coded dont change it-->
                 <div class="columns">
                   <div class="column is-4">
-                    <progress class="progress is-success" value="53" max="100"></progress>
+                    <progress class="progress is-medium is-warning" value="53" max="100"></progress>
                   </div>
                   <div class="column is-2"><span>53 </span> t</div>
                 </div>
@@ -151,7 +151,7 @@
                 <!--These are hard coded dont change it-->
                 <div class="columns">
                   <div class="column is-4">
-                    <progress class="progress is-warning" value="19" max="100"></progress>
+                    <progress class="progress is-medium is-warning" value="19" max="100"></progress>
                   </div>
                   <div class="column is-2"><span>19 </span> t</div>
                 </div>
