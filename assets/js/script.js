@@ -55,4 +55,9 @@ function displayResults(results) {
     yourEmissionProgress.value = results.data.attributes.carbon_mt; 
     yourEmission.innerHTML = results.data.attributes.carbon_mt;
     resultsScreen.style.display = 'block';
+    saveElectricityResult(results.data.attributes.carbon_mt);
 }
+
+function saveElectricityResult(carbon_mt){
+    localStorage.setItem('electricityResults', carbon_mt);
+} 
