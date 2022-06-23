@@ -1,7 +1,7 @@
 
 const carbonFootPrintForm = document.getElementById('carbonFootPrint');
 const resultsScreen = document.getElementById('results');
-const yourEmissionProgress = document.getElementById('yourEmissionProgress');
+const yourEmissionProgerss = document.getElementById('yourEmissionProgress');
 const yourEmission = document.getElementById('yourEmission');
 var selectedState = '';
 var activities = '';
@@ -27,10 +27,10 @@ function submitCarbonForm(event) {
 function resetForm() {
     carbonFootPrintForm.reset();
     resultsScreen.style.display = 'none';
-};
+}
 
 function calculateCarbonFootPrint() {
-    var request_body = {
+    let request_body = {
         "type": activities,
         "country": "us",
         "state": selectedState,
