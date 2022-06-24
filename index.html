@@ -1,85 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./assets/images/css/stylesheet.css"
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
-
-    <title>My Carbon Footprint</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Carbon Footprint By Region</title>
 </head>
+
 <body>
-    <!-- Header and a navigation bar (?)-->
-    <header>
-        <h1>Carbon Footprint Tracker</h1>
-    </header>
 
-    <!-- A brief description -->
-    <section class="about">
-        <!-- div for possible logo ? -->
-        <div>
-
-        </div>
-        <h2 class="brand">Carbonprint</h2>
-        <div class="section-background">
-            <p>
-                Track your carbon footprints from anywhere in America. Keep a record of the impact your day to day consumption and activities have on the world.
-            </p>
-        </div>
-
-    </section>
-
-    <!-- i got this from stackoverflow-->
-    <style>
-        .input {float: left;}
-        .input {width: 50%; float: left;}
-    </style>
-
-    
-    <section class="input">
-        <h2 class="log">Log Your Use:</h2>
-        <div class="choose-state">
-            <label for="state">Choose Your State:</label>
-            <select name="state" id="state">
-                <option value="NY">New York</option>
-                <option value="CA">California</option>
-                <option value="IL">Illinois</option>
-                <option value="TX">Texas</option>
-            </select>
-            <button type="submit">Submit</button>
-        </div>
-        <div class="pick-activity">
-            <form>
-                <label for="activity">Activity:</label>
-                <input type="text" placeholder="Activity"/>
-            </form>
-            <button type="submit">Submit</button>
-        </div>
-        <div class="">
-            <form>
-                <label for="amount">Carbon Emmitted:</label>
-                <input type="text" placeholder="12kg, etc."/>
-            </form>
-        </div>
-    </section>
-    <!-- This separate section will display on other half of screen with data -->
-    <section class="carbon-data">
-        <div>
-            <h2 class="elsewhere"> Carbon Emissions elsewhere!</h2>
-            <p>In this section, data is to be displayed, alongside with images. We can also link to another html (would open in new tab) </p>
-        </div>
-        <div class="chart"></div>
-        <div class="graph"></div>
-    </section>
-<footer>
-    <h2>❤️ Made with care by Carbonprint</h2>
-    <div>
-        &copy;Carbonprint
+  <header class="section hero is-link">
+    <div class="container hero-body">
+      <h1 class="title">Carbon Footprint By Region</h1>
+      <p class="subtitle">Welcome to the <strong>Carbon Footprint Tracker website</strong>!</p>
     </div>
-</footer>
-    
+  </header>
+
+  <section class="section">
+    <div class="columns">
+      <form class="column is-2" id="carbonFootPrint">
+        <div class="field">
+          <label class="label">Select a State</label>
+          <div class="control">
+            <div class="select">
+              <select name="stateDropdown">
+                <option>Choose an option</option>
+                <option value="al">Alabama</option>
+                <option value="ak">Alaska</option>
+                <option value="az">Arizona</option>
+                <option value="ar">Arkansas</option>
+                <option value="ca">California</option>
+                <option value="co">Colorado</option>
+                <option value="ct">Connecticut</option>
+                <option value="de">Delaware</option>
+                <option value="fl">Florida</option>
+                <option value="ga">Georgia</option>
+                <option value="hi">Hawaii</option>
+                <option value="id">Idaho</option>
+                <option value="il">Illinois</option>
+                <option value="in">Indiana</option>
+                <option value="ia">Iowa</option>
+                <option value="ks">Kansas</option>
+                <option value="ky">Kentucky</option>
+                <option value="la">Louisiana</option>
+                <option value="me">Maine</option>
+                <option value="md">Maryland</option>
+                <option value="ma">Massachusetts</option>
+                <option value="mi">Michigan</option>
+                <option value="mn">Minnesota</option>
+                <option value="ms">Mississippi</option>
+                <option value="mo">Missouri</option>
+                <option value="mt">Montana</option>
+                <option value="ne">Nebraska</option>
+                <option value="nv">Nevada</option>
+                <option value="nh ">New Hampshire</option>
+                <option value="nj">New Jersey</option>
+                <option value="nm">New Mexico</option>
+                <option value="ny">New York</option>
+                <option value="nc">North Carolina</option>
+                <option value="nd">North Dakota</option>
+                <option value="oh">Ohio</option>
+                <option value="ok">Oklahoma</option>
+                <option value="or">Oregon</option>
+                <option value="pa">Pennsylvania</option>
+                <option value="ri">Rhode Island</option>
+                <option value="sc">South Carolina</option>
+                <option value="sd">South Dakota</option>
+                <option value="tn">Tennessee</option>
+                <option value="tx">Texas</option>
+                <option value="ut">Utah</option>
+                <option value="vt">Vermont</option>
+                <option value="va">Virginia</option>
+                <option value="wa">Washington</option>
+                <option value="wv ">West Virginia</option>
+                <option value="wi">Wisconsin</option>
+                <option value="wy">Wyoming</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Select an Activity</label>
+          <div class="control">
+            <div class="select">
+              <select name="activities">
+                <option>Choose an option</option>
+                <option value="electricity">Electricity</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Select a Unit</label>
+          <div class="control">
+            <div class="select">
+              <select name="unit">
+                <option>Choose an option</option>
+                <option value="mwh">mwh</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Enter a Value</label>
+          <div class="control">
+            <input class="input is-link" type="text" name="powerUsage" placeholder="Text input">
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <button onclick=submitCarbonForm(event) class="button is-success">Submit</button>
+          </div>
+          <div class="control">
+            <button onclick=resetForm() class="button is-danger is-light">Reset</button>
+          </div>
+        </div>
+      </form>
+      <div class="column is-10">
+        <div>
+          <div class="tile is-parent" id="results">
+            <div class="tile is-child notification is-info">
+              <div>
+                <div>Your total annual emissions</div>
+                <div class="columns">
+                  <div class="column is-4">
+                    <progress id="yourEmissionProgress" class="progress is-large is-success" value="" max="100"></progress>
+                  </div>
+                  <div class="column is-2" ><span id="yourEmission"> </span> t</div>
+                </div>
+              </div>
+              <div>
+                <div>United States Country average</div>
+                <!--These are hard coded dont change it-->
+                <div class="columns">
+                  <div class="column is-4">
+                    <progress class="progress is-medium is-success" value="53" max="100"></progress>
+                  </div>
+                  <div class="column is-2"><span>53 </span> t</div>
+                </div>
+              </div>
+              <div>
+                <div>World average</div>
+                <!--These are hard coded dont change it-->
+                <div class="columns">
+                  <div class="column is-4">
+                    <progress class="progress is-medium is-warning" value="19" max="100"></progress>
+                  </div>
+                  <div class="column is-2"><span>19 </span> t</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Carbon Footprint By Region</strong> by <a href="">Group Project - Team Claw</a>. 
+      </p>
+    </div>
+  </footer>
+  <script src="/assets/js/script.js"></script>
+
 </body>
+
 </html>
