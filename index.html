@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./assets/images/css/stylesheet.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+
+    <title>My Carbon Footprint</title>
+</head>
+<body>
+    <!-- Header and a navigation bar (?)-->
+    <header>
+        <h1>Carbon Footprint Tracker</h1>
+    </header>
+
+    <!-- A brief description -->
+    <section class="about">
+        <!-- div for possible logo ? -->
+        <div>
+
+        </div>
+        <h2 class="brand">Carbonprint</h2>
+        <div class="section-background">
+            <p>
+                Track your carbon footprints from anywhere in America. Keep a record of the impact your day to day consumption and activities have on the world.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- i got this from stackoverflow-->
+    <style>
+        .input {float: left;}
+        .input {width: 50%; float: left;}
+    </style>
+
+    
+    <section class="input">
+        <h2 class="log">Log Your Use:</h2>
+        <div class="choose-state">
+            <label for="state">Choose Your State:</label>
+            <select name="state" id="state">
+                <option value="NY">New York</option>
+                <option value="CA">California</option>
+                <option value="IL">Illinois</option>
+                <option value="TX">Texas</option>
+            </select>
+            <button type="submit">Submit</button>
+        </div>
+        <div class="pick-activity">
+            <form>
+                <label for="activity">Activity:</label>
+                <input type="text" placeholder="Activity"/>
+            </form>
+            <button type="submit">Submit</button>
+        </div>
+        <div class="">
+            <form>
+                <label for="amount">Carbon Emmitted:</label>
+                <input type="text" placeholder="12kg, etc."/>
+            </form>
+        </div>
+    </section>
+    <!-- This separate section will display on other half of screen with data -->
+    <section class="carbon-data">
+        <div>
+            <h2 class="elsewhere"> Carbon Emissions elsewhere!</h2>
+            <p>In this section, data is to be displayed, alongside with images. We can also link to another html (would open in new tab) </p>
+        </div>
+        <div class="chart"></div>
+        <div class="graph"></div>
+    </section>
+<footer>
+    <h2>❤️ Made with care by Carbonprint</h2>
+    <div>
+        &copy;Carbonprint
+    </div>
+</footer>
+    
+</body>
+</html>
