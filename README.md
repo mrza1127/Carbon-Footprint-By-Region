@@ -3,7 +3,7 @@ https://github.com/mrza1127/Carbon-Footprint-By-Region
 
 # Deployed URL
 
-https://github.com/ashwinilh/carbonfootprint/
+https://ashwinilh.github.io/carbonfootprint/
 
 # Userstory
 
